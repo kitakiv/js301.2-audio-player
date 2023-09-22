@@ -92,14 +92,17 @@ html {
     display: flex;
     align-items: center;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 .progress {
-    width: 15rem;
+    width: 1%;
     height: 0.7rem;
     border-radius: 1rem;
     background-color: #69ff05;
     opacity: 1;
+    transition: 0.1s;
+    cursor: pointer;
 }
 
 .round {
@@ -108,6 +111,7 @@ html {
     border-radius: 20rem;
     background-color: #69ff05;
     margin-left: -1.4rem;
+    cursor: pointer;
 }
 
 .singer {
@@ -150,7 +154,7 @@ html {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: -0.3rem;
+    margin-top: -0.56rem;
     transition: all 0.5s;
 }
 
