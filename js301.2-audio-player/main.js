@@ -8,7 +8,8 @@ const player = document.getElementById('player'),
       nextButton = document.querySelector('.but-next'),
       prewButton = document.querySelector('.but-prew'),
       progressButton = document.querySelector('.progress'),
-      progressConteiner = document.querySelector('.progress-conteiner')
+      progressConteiner = document.querySelector('.progress-conteiner'),
+      singer = document.querySelector('.singer')
 //seconds
 const rightTime = (time) => (time < 10 ? `0${time}` : time)
 function toMinutes(seconds) {
@@ -19,6 +20,7 @@ function toMinutes(seconds) {
 }
 // play music
 const masOfTreks = ['Meliza', 'Hot girl bummer', 'This Year'];
+const singers = ['DJ Flex', 'Matthew Tyler Musto', 'Victor Thompson']
 let index = 0;
 let isPlay = false;
 function playMusic() {
@@ -36,6 +38,7 @@ function playMusic() {
 // change the music
 function music() {
     nameOfsong.innerHTML = masOfTreks[index];
+    singer.innerHTML = singers[index];
     background.src = `./assets/img/cover${index + 1}.jpg`;
     img.src = `./assets/img/cover${index + 1}.jpg`;
     audio.src = `./assets/audio/song${index + 1}.mp3`
