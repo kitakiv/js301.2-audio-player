@@ -25,10 +25,12 @@ let index = 0;
 let isPlay = false;
 function playMusic() {
     if(isPlay) {
+        img.classList.remove('play-img');
         pauseOrPlay.src = './assets/svg/play.svg'
         audio.pause();
         isPlay = false;
     } else {
+        img.classList.add('play-img');
         pauseOrPlay.src = './assets/svg/pause.svg'
         audio.play();
         isPlay = true;
@@ -43,10 +45,12 @@ function music() {
     img.src = `./assets/img/cover${index + 1}.jpg`;
     audio.src = `./assets/audio/song${index + 1}.mp3`
     pauseOrPlay.src = './assets/svg/pause.svg';
-    player.classList = `player${index + 1}`
+    player.classList = `player${index + 1}`;
+    player.classList.add('playerauto')
     isPlay = true;
     audio.currentTime = 0;
     audio.play();
+    img.classList.add('play-img');
 }
 //next
 function nextSong() {
