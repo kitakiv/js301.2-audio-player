@@ -19,8 +19,8 @@ function toMinutes(seconds) {
     return `${minutes}:${sec}`
 }
 // play music
-const masOfTreks = ['Meliza', 'Hot girl bummer', 'This Year', 'Candy'];
-const singers = ['DJ Flex', 'Matthew Tyler Musto', 'Victor Thompson', 'Rosalia']
+const masOfTreks = ['Meliza', 'Hot girl bummer', 'This Year', 'Candy', 'Busy Body'];
+const singers = ['DJ Flex', 'Matthew Tyler Musto', 'Victor Thompson', 'Rosalia', 'Zagazillions']
 let index = 0;
 let isPlay = false;
 function playMusic() {

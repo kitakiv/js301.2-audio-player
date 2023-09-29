@@ -59,6 +59,10 @@ html {
     background: linear-gradient(0.58turn, #ffffff, #ff2323);
 }
 
+.player5 {
+    background: linear-gradient(0.87turn, #000000, #8a35be, #fff);
+}
+
 .img {
     margin-top: 2rem;
     margin-bottom: 2rem;
